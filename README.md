@@ -27,6 +27,9 @@ description: Upload and download files.
 
 # cordova-plugin-file-transfer
 
+This is a fork of the apache version of the plugin, which was deprecated in favour of use of XHR. We still need to use the plugin as we have been seeing issues with using XHR for large zip file downloads. Compilation for the original plugin, deprecated at version 1.7.1, broke when used with cordova-ios 6.0.0 which introduced full support for WKWebView. This fork should compile using cordova-ios 6.0.0.
+
+
 This plugin allows you to upload and download files.
 
 This plugin defines global `FileTransfer`, `FileUploadOptions` constructors. Although in the global scope, they are not available until after the `deviceready` event.
